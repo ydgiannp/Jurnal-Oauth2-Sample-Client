@@ -1,0 +1,31 @@
+%section
+  .body-section
+    -if @access_token.present?
+      .present-section
+        %h3
+          Welcome
+        Your Access Token is
+        %code 
+          = @access_token
+        %br
+        Your Refresh Token is 
+        %code
+          = @access_token
+        %br
+        Refresh in
+        %code
+          = @access_token
+        %h4
+          Sample API Endpoints
+        %br
+          =link_to "Get Customers List","https://54.251.142.144:8443/partner/core/api/v1/customers?access_token=#{@access_token}", :target => "_blank"
+        =link_to "Get Products List","https://54.251.142.144:8443/partner/core/api/v1/products?access_token=#{@access_token}", :target => "_blank"
+        %br
+          =link_to "Get Sales Invoices List","https://54.251.142.144:8443/partner/core/api/v1/sales_invoices?access_token=#{@access_token}", :target => "_blank"
+        =link_to "Get Accounts List","https://54.251.142.144:8443/partner/core/api/v1/accounts?access_token=#{@access_token}", :target => "_blank"
+        %br
+          =link_to "Get Vendors List","https://54.251.142.144:8443/partner/core/api/v1/vendors?access_token=#{@access_token}", :target => "_blank"
+
+    -else
+      =link_to "<button class='button-area'>Authorize to Jurnal</button>".html_safe ,"#{@authorize_link}?client_id=#{@client_id}", {:style => 'color:#FFFFFF;'}
+
