@@ -8,7 +8,7 @@
 * Open your terminal
 * Access the sample folder
 * Run <tt>rails s -p 3000</tt>
-* Then in the website open <tt>http://localhost:3000</tt>
+* Then open <tt>http://localhost:3000</tt> in your browser
 
 ===Authorization Information
 Before authorize your app to Jurnal, you have to register your app to get permission to authorize by contacting our support. You have to provide your Partner Name, Application Name, and Callback URL which is a callback link once your app get a permission and we will give the Client id, Secret key, and Consumer id.
