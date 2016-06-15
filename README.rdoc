@@ -1,28 +1,24 @@
-== README
+== Jurnal Sample OAUTH2 Implementation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+===Requirements
+* Ruby version 2.0.0
+* Rails 4.2.5.1
 
-Things you may want to cover:
+===Running Sample Application
+* Open your terminal
+* Access the sample folder
+* Run <tt>rails s -p 3000</tt>
+* Then in the website open <tt>http://localhost:3000</tt>
 
-* Ruby version
+===Authorization Information
+Before authorize your app to Jurnal, you have to register your app to get permission to authorize by contacting our support. You have to provide your Partner Name, Application Name, and Callback URL which is a callback link once your app get a permission and we will give the Client id, Secret key, and Consumer id.
 
-* System dependencies
+===Sample Application Information
+* Client id         = <tt>72873d74d5c741489e80a7302f7beb73</tt>
+* Secret key        = <tt>6c6bb271bbf14481a415ddeaf416bd1c</tt>
+* Consumer id       = <tt>651d7f13-7e73-49e0-8793-f95ce7b4314b</tt>
+* Partner name      = <tt>Your Partner</tt>
+* Application name  = <tt>Partner Jurnal</tt>
+* Callback URL      = <tt>http://localhost:3000</tt>
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Feel free to use this sample app responsibly
